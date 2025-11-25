@@ -8,9 +8,6 @@ async function fetchChatResponse() {
     }
 
     responseDiv.innerHTML = "Thinking...";
-
-    const apiUrl = "https://openrouter.ai/api/v1/chat/completions";
-    const apiKey = "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"; 
     try {
         const response = await fetch(apiUrl, {
             method: "POST",
@@ -35,3 +32,4 @@ async function fetchChatResponse() {
         responseDiv.innerHTML = "Error fetching response.";
     }
 }
+
