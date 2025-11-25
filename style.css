@@ -1,0 +1,119 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main_nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+nav{
+    background-color: #f3faff;
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    z-index: 99;
+    right: 0;
+}
+.company-logo{
+    width: 120px;
+}
+ul{
+    display: flex;
+    justify-content:space-around;
+    align-items: center; 
+    gap: 16px;
+    list-style: none;
+}
+li:hover{
+    cursor: pointer;
+   color: rgb(3, 232, 249);
+}
+li:active{
+    color: red;
+}
+.search_bar{
+    height: 32px;
+    display: flex;
+    gap: 8px;
+}
+.news_input{
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+}
+.search_button{
+    height: 100%;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    background-color: rgb(8, 136, 248);
+    border-radius: 4px;
+   cursor: pointer;
+}
+.search_button:hover{
+  background-color: rgb(6, 83, 249);
+}
+main{
+    padding-block: 20px;
+    margin-top: 70px;
+}
+.card_container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+.card{
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.card:hover{
+    box-shadow:1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+    transform: translatey(-2px);
+}
+.card_header img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.card_content{
+    padding: 12px;
+}
+.news_source{
+    margin-block: 12px;
+}
+ ul li.active{
+    color: rgb(3, 232, 249); 
+}
+#devImage {
+    width: 65px; 
+    height: 65px; 
+    border-radius: 50%; 
+    border: 2px solid #4CAF50; 
+    margin: 0; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    position: absolute; 
+    top: 2px; 
+    right: 20px; 
+}
+

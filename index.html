@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>news</title>
+</head>
+<body>
+    <nav>
+        <div class="main_nav">
+            <a href="#" onclick="reload()" id="link">
+                <img src="company_logo.png" alt="Company Logo" class="company-logo">
+            </a>
+            <div class="nav_link">
+                <ul>
+                    <li id="ipl" onclick="navclick('ipl')">IPL</li>
+                    <li id="finance" onclick="navclick('finance')">Finance</li>
+                    <li  id="politics" onclick="navclick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search_bar">
+                <input type="text" class="news_input" id="news_input" placeholder="e.g. Science">
+                <button class="search_button" id="search_button">Search</button>
+            </div>
+               <img src="mohit.jpeg" alt="Developer's Image" id="devImage">
+        </div>
+    </nav>
+    <main>
+        <div class="card_container" id="card_container">
+        </div>
+    </main>
+    <template id="template_news_card">
+        <div class="card">
+            <div class="card_header">
+                <img src="https://via.placeholder.com/400x200" alt="" id="news_img">
+            </div>
+            <div class="card_content">
+                <h3 id="news_title">this is the title</h3>
+                <h6 class="news_source" id="news_source">dfjgpisj</h6>
+                <p class="news_desc" id="news_desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>
